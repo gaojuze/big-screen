@@ -61,7 +61,18 @@
       padding-left: px(6);
       display: flex;
       align-items: center;
-     
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        box-shadow: 4px 0 0 -3px #082131,
+        -4px 0 0 -3px #082131,
+        0 4px 0 -3px #082131,
+        0 -4px 0 -3px #082131,;
       }
     }
     .section1 {
